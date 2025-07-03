@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh i Technologies - YouTube</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(8, 12, 12);
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .left-head {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .bi-list {
+            /* display: block; */
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .yt-logo {
+            /* margin-top: 10px; */
+        }
+
+        .search-bar {
+            border: 1px solid rgb(155, 150, 150);
+            padding: 10px;
+            width: 300px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0 10px 0;
+        }
+
+        .search-bar span {
+            font-size: 20px;
+        }
+
+        .sign {
+            display: flex;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        .signin-bar {
+            border: 1px solid blue;
+            border-radius: 20px;
+            padding: 10px 10px 0 10px;
+            color: blue;
+            align-items: center;
+            margin-bottom: 10px;
+
+        }
+
+
+        .bi-three-dots-vertical {
+            margin-top: 10px;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            grid-gap: 10px;
+        }
+
+        nav {
+            background-color: black;
+            height: 700px;
+            overflow: auto;
+            padding: 20px;
+            color: white;
+        }
+
+        main {
+            background-color: black;
+            color: white;
+            height: 700px;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .shortcut {
+            font-size: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .signin-bar-short {
+            width: 90px;
+            border: 2px solid blue;
+            border-radius: 20px;
+            padding: 10px;
+            color: blue;
+            margin-top: 10px;
+
+
+        }
+
+        .bi-house {
+            font-weight: bold;
+
+        }
+
+        .title {
+            padding-left: 15px;
+        }
+
+        hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .copy {
+            color: grey;
+        }
+
+        .banner {
+            width: 90%;
+            border-radius: 20px;
+        }
+
+        .logo-text {
+            display: flex;
+            margin-top: 30px;
+
+        }
+
+        .logo {
+            border-radius: 100px;
+        }
+
+        .text {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .text span{
+            display: block;
+            line-height: 25px;
+        }
+
+        .subs {
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .somebuttons {
+           margin-top: 40px;
+
+        }
+
+        .somebuttons span {
+            font-weight: bold;
+            font-size: 20px;
+            padding-right: 10px;
+            color: rgb(215, 206, 206);
+        }
+
+        .somebuttons span:first-child {
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+        article{
+            display: flex;
+            gap: 40px;
+        }
+        .article-text span{
+             display: block;
+             line-height: 25px;
+        }
+        .artiteHead{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .videos{
+            display: grid;
+            width: 500px;
+            /* background-color: aquamarine; */
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ;
+            /* grid-template-columns: 2fr 2fr 2fr 2fr 2fr  ; */
+            grid-gap: 10px;
+        }
+        .card{
+            width: 100px;
+        }
+
+        .cardtext{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        h1{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left-head">
+            <div class="bi bi-list"></div>
+            <div><img class="yt-logo" src="./images/youtubelogo.png" alt=""></div>
+        </div>
+        <div>
+            <div class="search-bar">
+                <span class="search">search</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <span class="bi bi-mike"></span>
+        </div>
+
+
+        <div class="sign">
+            <div class="bi bi-three-dots-vertical"></div>
+            <div class="signin-bar">
+                <div class="bi bi-person-circle">Sign in</div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <div class="shortcut">
+                <span class="bi bi-house"></span>
+                <span class="title">Home</span>
+            </div>
+            <div class="shortcut">
+                <span class="bi bi-film"></span>
+                <span class="title">Shorts</span>
+            </div>
+            <div class="shortcut">
+                <span class="bi bi-skip-end-btn"></span>
+                <span class="title">Subscription</span>
+            </div>
+            <hr>
+            <div class="shortcut">
+                <span class="bi bi-house"></span>
+                <span class="title">You</span>
+            </div>
+            <div class="shortcut">
+                <span class="bi bi-clock-history"></span>
+                <span class="title">History</span>
+            </div>
+            <hr>
+            <div>
+                <span>Sign in to like videos, <br>
+                    comment, and subscribe.</span>
+                <div class="signin-bar-short">
+                    <div class="bi bi-person-circle">Sign in</div>
+                </div>
+                <hr>
+                <div>
+                    <h2>Explore</h2>
+                    <div class="shortcut">
+                        <span class="bi bi-fire"></span>
+                        <span class="title">Trending</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-bag"></span>
+                        <span class="title">Shoping</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-music-note-beamed"></span>
+                        <span class="title">Music</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-film"></span>
+                        <span class="title">Movies</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-broadcast"></span>
+                        <span class="title">Live</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-house"></span>
+                        <span class="title">Gaming</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-newspaper"></span>
+                        <span class="title">News</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-controller"></span>
+                        <span class="title">Sports</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-mortarboard"></span>
+                        <span class="title">courses</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-align-top"></span>
+                        <span class="title">Fashion & Beauty</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-broadcast-pin"></span>
+                        <span class="title">Podcasts</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div>
+                    <h3>More from YouTube</h3>
+                    <div class="shortcut">
+                        <span class="bi bi-youtube"></span>
+                        <span class="more-text">YouTube Premium</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-umbrella-fill"></span>
+                        <span class="more-text">YouTube Premium</span>
+                    </div>
+                    <div class="shortcut">
+                        <span class="bi bi-youtube"></span>
+                        <span class="more-text">YouTube Kids</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="setting-person">
+                <div class="shortcut">
+                    <span class="bi bi-gear"></span>
+                    <span class="settingt-text">Settings</span>
+                </div>
+                <div class="shortcut"> <span class="bi bi-flag"></span>
+                    <span class="settingt-text">Report History</span>
+                </div>
+                <div class="shortcut"><span class="bi bi-flag"></span>
+                    <span class="settingt-text">Report History</span>
+                </div>
+                <div class="shortcut"> <span class="bi bi-question-circle"></span>
+                    <span class="settingt-text">Help</span>
+                </div>
+
+                <div class="shortcut"> <span class="bi bi-chat-left-quote-fill"></span>
+                    <span class="settingt-text">Send feedback</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div>
+                <span>
+                    About PressCopyright <br>
+                    Contact us Creators <br>
+                    Advertise Developers <br><br>
+
+                    TermsPrivacyPolicy & Safety <br>
+                    How YouTube works <br>
+                    Test new features <br><br>
+
+                    <span class="bi bi-c-circle copy">2025 Google LLC</span>
+
+                </span>
+            </div>
+
+        </nav>
+
+        <main>
+            <div>
+                <img class="banner" src="./images/youtube-banner.jpg" alt="banner of youtube">
+            </div>
+
+            <div class="logo-text">
+                <div>
+                    <img src="./images/nareshit-logo.jpg" class="logo" alt="">
+                </div>
+                <div class="text">
+                    <p class="artiteHead">Naresh i Technologies</p>
+                    <span>@NareshIT • 1.32M subscribers • 3.3K videos</span>
+
+                    <span class="about">We are one of the software training organization With a library of 200+ courses,
+                        we have helped 600,000+ professionals advance their careers in almost every possible phase of
+                        academics, interviews, jobs and delivering improvement in pay raises. ...more </span>
+
+                    <a href="">instagram.com/nareshitech</a>
+                    <span>and 7 more links </span><br>
+
+                    <button class="subs">subscribe</button>
+
+                </div>
+            </div>
+
+
+
+            <div>
+                <div class="somebuttons">
+                    <span>Home</span>
+                    <span>Video</span>
+                    <span>Shorts</span>
+                    <span>Live</span>
+                    <span>Playlists</span>
+                    <span>Posts</span>
+                    <span class="bi bi-search"></span>
+                </div>
+                <hr>
+            </div>
+           <article>
+              <div>
+                <iframe src="https://www.youtube.com/embed/yBw-6rr5hbA?si=al08NC5tGFpgZhKg" frameborder="0"></iframe>
+            </div>
+
+            <div class="article-text">
+                <h3>Best Software Training Institute with Placements - Naresh i Technologies</h6>
+                <span> 239,785 views &#9679 5 years ago </span>
+
+                <span>Register For Free Demos On New Batches :-</span>
+
+                 <span>Full Stack JAVA @ 6:00 PM | Link: https://t.ly/FYsB6
+                </span>
+                 <span>UI Full Stack with React @ 8:30 AM | Link: https://t.ly/jVDpD
+                </span>
+                 <span>Full Stack TESTING @ 9:00 AM | Link: https://t.ly/DpGTx
+                </span>
+                 <span>Full Stack PYTHON @ 9:00 AM | Link: https://t.ly/iPJ-O
+                </span>
+                 <span>Azure Data Engineering @ 6:00 PM | Link: https://t.ly/kWR3l
+                </span>
+                <span class="readmore">Read more</span>
+
+
+            </div>
+           </article>
+           <hr>
+
+           <!-- videos -->
+           <h1>Videos</h1>
+            <div class="videos">
+                
+                <div class="cards">
+                    <iframe width="200px" src="https://www.youtube.com/embed/HC6Y5unfGqQ?si=vDjHdNa8vvhFz4ba" frameborder="0"></iframe>
+                    <div class="cardtext">
+                        <div>Day-5 | Crack Top Coding <br> 
+                            Problem with Ease |...</div>
+                        <div class="bi bi-three-dots-vertical"> </div>
+                    </div>                    
+                    <span class="footer">512 views . 5 hours ago</span>
+                </div>
+
+                <div class="cards">
+                    <iframe width="200px"  src="https://www.youtube.com/embed/HC6Y5unfGqQ?si=vDjHdNa8vvhFz4ba" frameborder="0"></iframe>
+                    <div class="cardtext">
+                        <div>Day-5 | Crack Top Coding <br> 
+                            Problem with Ease |...</div>
+                        <div class="bi bi-three-dots-vertical"> </div>
+                    </div>                    
+                    <span class="footer">512 views . 5 hours ago</span>
+                </div>
+
+                <div class="cards">
+                    <iframe width="200px"  src="https://www.youtube.com/embed/HC6Y5unfGqQ?si=vDjHdNa8vvhFz4ba" frameborder="0"></iframe>
+                    <div class="cardtext">
+                        <div>Day-5 | Crack Top Coding <br> 
+                            Problem with Ease |...</div>
+                        <div class="bi bi-three-dots-vertical"> </div>
+                    </div>                    
+                    <span class="footer">512 views . 5 hours ago</span>
+                </div>
+                
+                <div class="cards">
+                    <iframe width="220px"  src="https://www.youtube.com/embed/HC6Y5unfGqQ?si=vDjHdNa8vvhFz4ba" frameborder="0"></iframe>
+                    <div class="cardtext">
+                        <div>Day-5 | Crack Top Coding <br> 
+                            Problem with Ease |...</div>
+                        <div class="bi bi-three-dots-vertical"> </div>
+                    </div>                    
+                    <span class="footer">512 views . 5 hours ago</span>
+                </div>
+                
+                <div class="cards">
+                    <iframe width="230px"  src="https://www.youtube.com/embed/HC6Y5unfGqQ?si=vDjHdNa8vvhFz4ba" frameborder="0"></iframe>
+                    <div class="cardtext">
+                        <div>Day-5 | Crack Top Coding <br> 
+                            Problem with Ease |...</div>
+                        <div class="bi bi-three-dots-vertical"> </div>
+                    </div>                    
+                    <span class="footer">512 views . 5 hours ago</span>
+                </div>                
+            </div>
+<hr>
+             <!-- past live stream -->
+             <h1 >Past live stram</h1>
+             <div class="videos">
+                 
+                 <div class="cards">
+                     <iframe width="210px" src="https://www.youtube.com/embed/2TJVDbeEVMw?si=ZQZzwC8wv_G0SWbu" frameborder="0"></iframe>
+                     <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/2TJVDbeEVMw?si=ZQZzwC8wv_G0SWbu" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/2TJVDbeEVMw?si=ZQZzwC8wv_G0SWbu" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/2TJVDbeEVMw?si=ZQZzwC8wv_G0SWbu" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/2TJVDbeEVMw?si=ZQZzwC8wv_G0SWbu" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>                
+             </div>
+<hr>
+             <!-- popular videos -->
+             <h1 >Popular videos</h1>
+             <div class="videos">
+                 
+                 <div class="cards">
+                     <iframe width="210px" src="https://www.youtube.com/embed/si-KFFOW2gw?si=O1_1qV2zTh4G-IO1" frameborder="0"></iframe>
+                     <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/si-KFFOW2gw?si=O1_1qV2zTh4G-IO1" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/si-KFFOW2gw?si=O1_1qV2zTh4G-IO1" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/si-KFFOW2gw?si=O1_1qV2zTh4G-IO1" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/si-KFFOW2gw?si=O1_1qV2zTh4G-IO1" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>                
+             </div>
+<hr>
+             <!-- big data -->
+              
+             <h1 >Big data </h1>
+             <div class="videos">
+                 
+                 <div class="cards">
+                     <iframe width="210px" src="https://www.youtube.com/embed/dZkw_S9xLyw?si=LZNsYnPpS1eNaEjE" frameborder="0"></iframe>
+                     <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/dZkw_S9xLyw?si=LZNsYnPpS1eNaEjE" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/dZkw_S9xLyw?si=LZNsYnPpS1eNaEjE" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/dZkw_S9xLyw?si=LZNsYnPpS1eNaEjE" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/dZkw_S9xLyw?si=LZNsYnPpS1eNaEjE" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>                
+             </div>
+<br>
+              <!-- core java in hindi -->
+             <h1 >core java in Hindi</h1>
+             <div class="videos">
+                 
+                 <div class="cards">
+                     <iframe width="210px" src="https://www.youtube.com/embed/GvBTu50qSDQ?si=zN-RafsiVppuDAWo" frameborder="0"></iframe>
+                     <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/GvBTu50qSDQ?si=zN-RafsiVppuDAWo" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+ 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/GvBTu50qSDQ?si=zN-RafsiVppuDAWo" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/GvBTu50qSDQ?si=zN-RafsiVppuDAWo" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>
+                 
+                 <div class="cards">
+                    <iframe width="210px" src="https://www.youtube.com/embed/GvBTu50qSDQ?si=zN-RafsiVppuDAWo" frameborder="0"></iframe>
+                    <div class="cardtext">
+                         <div>Day-5 | Crack Top Coding <br> 
+                             Problem with Ease |...</div>
+                         <div class="bi bi-three-dots-vertical"> </div>
+                     </div>                    
+                     <span class="footer">512 views . 5 hours ago</span>
+                 </div>                
+             </div>
+
+
+        </main>
+    </section>
+
+</body>
+
+</html>
